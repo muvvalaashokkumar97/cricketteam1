@@ -1,0 +1,36 @@
+###
+get http://localhost:8080/movies/
+
+### 
+post http://localhost:8080/movies/
+Content-Type: application/json
+
+{
+  "directorId": 6,
+  "movieName": "Jurassic Park",
+  "leadActor": "Jeff Goldblum"
+}
+
+###
+get http://localhost:8080/movies/46/
+
+
+###
+put http://localhost:8080/movies/49/
+Content-Type: application/json
+
+{
+  "directorId": 24,
+  "movieName": "Thor",
+  "leadActor": "Christopher Hemsworth"
+}
+
+
+###
+delete http://localhost:8080/movies/49
+
+###
+get http://localhost:8080/directors/
+
+###
+get http://localhost:8080/directors/1/movies/
