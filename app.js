@@ -15,8 +15,6 @@ const initializeDBAndServer = async () => {
     });
     app.listen(8080, () => {
       console.log(dbPath);
-      console.log(typeof open);
-      console.log(typeof app);
     });
   } catch (e) {
     console.log(`DB error: ${e.message}`);
